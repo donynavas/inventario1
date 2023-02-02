@@ -10,18 +10,18 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
-    <title>Inventario Ver 1.0</title>
+    <title>Inventory Ver 1.0</title>
 </head>
 <body>
 <div id="contenedor">
     <div id="centro">
         <div id="login">
-            <div class="titulo">Inventario</div>
+            <div class="titulo">Inventory</div>
             
-            <form id="formulario">
-                <input type="text" name="usuario" id="usuario">
-                <input type="text" name="password" id="password">
-                <input type="submit" title="Entrar" name="Entrar" value="Entrar">
+            <form id="formulario" action="validar.php">
+                <input type="text" name="usuario" id="usuario" placeholder="Write your User">
+                <input type="text" name="password" id="password" placeholder="Write yoour Password">
+                <input type="submit" title="Entrar" name="Entrar" value="Log In">
             </form>  
 
 
