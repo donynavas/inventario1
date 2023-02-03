@@ -16,10 +16,10 @@ session_start();
 <div id="contenedor">
     <div id="centro">
         <div id="login">
-            <div class="titulo">Inventory</div>
+            <div class="titulo">Inventario</div>
             
             <form id="formulario" action="validar.php">
-                <input type="text" name="usuario" id="usuario" placeholder="Write your User">
+                <input type="text" name="username" id="username" placeholder="Write your User">
                 <input type="text" name="password" id="password" placeholder="Write yoour Password">
                 <input type="submit" title="Entrar" name="Entrar" value="Log In">
             </form>  
