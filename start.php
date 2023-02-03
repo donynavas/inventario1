@@ -18,7 +18,7 @@ session_start();
         <div id="login">
             <div class="titulo">Inventario</div>
             
-            <form id="formulario" action="validar.php">
+            <form id="formulario" method="POST" action="validar.php">
                 <input type="text" name="username" id="username" placeholder="Write your User">
                 <input type="text" name="password" id="password" placeholder="Write yoour Password">
                 <input type="submit" title="Entrar" name="Entrar" value="Log In">

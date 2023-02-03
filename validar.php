@@ -18,16 +18,16 @@ $resultado=mysqli_query($mysqli,$consulta);
 $filas=mysqli_fetch_array($resultado);
 
 if($filas['id_cargo']==1){ //administrador
-    header("location:admin.php");
+    header("location:main.php");
 
 }else
-if($filas['id_cargo']==2){ //secretaria
-header("location:secretaria.php");
+if($filas['id_cargo']==2){ //usuarios
+header("location:users.php");
 }
 else{
     ?>
     <?php
-    include("index.html");
+    include("index.php");
     ?>
     <h1 class="bad">ERROR EN LA AUTENTIFICACION</h1>
     <?php
