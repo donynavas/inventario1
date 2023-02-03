@@ -1,18 +1,21 @@
+<html>
+<head>
+        <title>Validate</title>
+</head>
+</html>
 <?php
-
-session_start();
 
 include "conexion.php";
 
-$username = $_POST['username'];
-$password = $_POST['password'];
-
+$username=$_POST['username'];
+$password=$_POST['password'];
+session_start();
 $_SESSION['username']=$username;
 
-$consulta = "SELECT * from usuarios where username = '$username' and password='$password'";
+$consulta="SELECT*FROM usuarios where username='$username' and password='$password'";
 $resultado=mysqli_query($mysqli,$consulta);
 
-$filas = mysqli_fetch_array($resultado);
+$filas=mysqli_fetch_array($resultado);
 
 if($filas['id_cargo']==1){ //administrador
     header("location:admin.php");
@@ -24,7 +27,7 @@ header("location:secretaria.php");
 else{
     ?>
     <?php
-    include("index.php");
+    include("index.html");
     ?>
     <h1 class="bad">ERROR EN LA AUTENTIFICACION</h1>
     <?php
@@ -33,6 +36,3 @@ mysqli_free_result($resultado);
 mysqli_close($conexion);
 ?>
 
-<html>
-
-</html>
