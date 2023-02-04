@@ -2,7 +2,7 @@
 
 
 <footer class="container">
-      <p> Dony Navas - 2023</p>
+      <p> </p>
     </footer>
 
     <!-- Bootstrap core JavaScript

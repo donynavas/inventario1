@@ -46,8 +46,8 @@
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-         
+        <form class="form-inline my-2 my-lg-0" action="logout.php">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">SALIR</button>
         </form>
       </div>
     </nav>
