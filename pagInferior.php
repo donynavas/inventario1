@@ -2,7 +2,7 @@
 
 
 <footer class="container">
-      <p>&copy; Company 2017-2018</p>
+      <p> Dony Navas - 2023</p>
     </footer>
 
     <!-- Bootstrap core JavaScript
