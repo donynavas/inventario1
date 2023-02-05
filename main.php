@@ -1,4 +1,4 @@
-<?php require_once "pagSuperior.php"; ?>
+<?php require_once "pageUp.php"; ?>
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<?php require_once "pagInferior.php"; ?>
+<?php require_once "pageDown.php"; ?>
 
 
 
